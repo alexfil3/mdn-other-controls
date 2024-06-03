@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alex Filimonov">
+    <meta name="description" content="MDN skill test on other form controls">
+    <title>Form controls</title>
+</head>
+<body>
+    <h1>MDN other form controls</h1>
+    <form action="https://httpbin.org/post" method="post">
+        <fieldset>
+            <legend>Enter your comment</legend>
+            <ul>
+                <li>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </li>
+                <li>
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" name="comment" maxlength="100" cols="35" rows="10"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Food</legend>
+            <label for="food">Pick your favorite food</label>
+            <select id="food" name="food">
+                <optgroup label="mains">
+                    <option value="salad">Salad</option>
+                    <option value="curry">Curry</option>
+                    <option value="pizza">Pizza</option>
+                    <option value="fajitas">Fajitas</option>
+                </optgroup>
+                <optgroup label="snacks">
+                    <option value="biscuits">Biscuits</option>
+                    <option value="crisps">Crisps</option>
+                    <option value="fruit">Fruit</option>
+                    <option value="breadsticks">Breadsticks</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Food2.0</legend>
+            <label for="food2.0">Food2.0</label>
+            <input type="text" list="food2" id="food2.0" name="food2.0">
+            <datalist id="food2">
+                <option value="salad">Salad</option>
+                <option value="curry">Curry</option>
+                <option value="pizza">Pizza</option>
+                <option value="fajitas">Fajitas</option>
+                <option value="biscuits">Biscuits</option>
+                <option value="crisps">Crisps</option>
+                <option value="fruit">Fruit</option>
+                <option value="breadsticks">Breadsticks</option>
+            </datalist>
+        </fieldset>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
